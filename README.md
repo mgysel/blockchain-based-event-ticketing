@@ -1,5 +1,5 @@
 
-# Sealed-Bid Blockchain Auctions using F3B
+# Blockchain-based Event Ticketing
 
   
 
