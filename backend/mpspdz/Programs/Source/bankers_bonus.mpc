@@ -1,0 +1,284 @@
+# coding: latin-1
+"""
+  Solve Bankers bonus, aka Millionaires problem.
+  to deduce the maximum value from a range of integer input.
+
+  Demonstrate clients external to computing parties supplying input and receiving an authenticated result. See bankers-bonus-client.cpp for client (and setup instructions).
+  
+  Wait for MAX_NUM_CLIENTS to join the game or client finish flag to be sent
+  before calculating the maximum.
+
+  Note each client connects in a single thread and so is potentially blocked.
+  
+  Each round / game will reset and so this runs indefinitiely.
+"""
+
+from Compiler.types import sint, regint, Array, MemValue
+from Compiler.library import print_ln, do_while, for_range
+from Compiler.util import if_else
+
+PORTNUM = 14000
+MAX_NUM_CLIENTS = 8
+n_rounds = 0
+n_threads = 2
+
+use_cubes = False
+# To disable key-dependent pre-processing set use_cubes=False
+
+if len(program.args) > 1:
+    n_rounds = int(program.args[1])
+
+if len(program.args) > 2:
+    program.active = bool(int(program.args[2]))
+
+def accept_client():
+    client_socket_id = accept_client_connection(PORTNUM)
+    last = regint.read_from_socket(client_socket_id)
+    return client_socket_id, last
+
+def close_connections(number_clients):
+    @for_range(number_clients)
+    def _(i):
+        closeclientconnection(i)
+
+def client_input(t, client_socket_id):
+    """
+    Send share of random value, receive input and deduce share.
+    """
+    
+    return t.receive_from_client(1, client_socket_id)[0]
+
+
+def determine_winner(number_clients, client_values, client_ids):
+    """Work out and return client_id which corresponds to max client_value"""
+    max_value = Array(1, client_values.value_type)
+    max_value[0] = client_values[0]
+    win_client_id = Array(1, sint)
+    win_client_id[0] = client_ids[0]
+
+    @for_range(number_clients-1)
+    def loop_body(i):
+        # Is this client input a new maximum, will be sint(1) if true, else sint(0)
+        is_new_max = max_value[0] < client_values[i+1]
+        # Keep latest max_value
+        max_value[0] = if_else(is_new_max, client_values[i+1], max_value[0])
+        # Keep current winning client id
+        win_client_id[0] = if_else(is_new_max, client_ids[i+1], win_client_id[0])
+
+    print_ln('maximum: %s', max_value[0].reveal())
+    return win_client_id[0]
+
+def write_winner_to_clients(sockets, number_clients, winning_client_id):
+    """Send share of winning client id to all clients who joined game."""
+
+    # Setup authenticate result using share of random.
+    # client can validate ∑ winning_client_id * ∑ rnd_from_triple = ∑ auth_result
+    sint.reveal_to_clients(sockets.get_sub(number_clients), [winning_client_id])
+
+def determine_hash(mimc, number_clients, client_values, client_ids):
+    '''
+    Determining the MiMC hash based on the client secrets
+    '''
+    """Work out and return client_id which corresponds to max client_value"""
+    h = mimc.encrypt_ss_to_ss(client_values)
+    # h = mimc.encrypt(client_values)
+
+    print_ln('h reveal: %s', h.reveal())
+    return h
+
+def write_hash_to_clients(sockets, number_clients, h):
+    """Send share of winning client id to all clients who joined game."""
+    print("*** Inside write_hash_to_clients")
+    print(f"winning_client_id: {h}")
+    print(f"type(wci): {type(h)}")
+
+    # Setup authenticate result using share of random.
+    # client can validate ∑ winning_client_id * ∑ rnd_from_triple = ∑ auth_result
+    sint.reveal_to_clients(sockets.get_sub(number_clients), [h])
+
+class KDPreprocessing(object):
+    """ Generate Key-Dependent Pre-processing """
+
+    def __init__(self, num_calls, rounds):
+        rint = VectorArray(num_calls * rounds, sint, nparallel)
+        rsquare = VectorArray(num_calls * rounds, sint, nparallel)
+        rcube = VectorArray(num_calls * rounds, sint, nparallel)
+
+        self.rounds = rounds
+        self.num_calls = num_calls
+        self.index = MemValue(regint(0))
+
+        @for_range(num_calls)
+        def block(i):
+            cur_block = i * rounds
+            for r in range(rounds):
+                next_block = cur_block + r
+                ta1, ta2 = sint.get_random_square()
+                rint[next_block] = ta1
+                rsquare[next_block] = ta2
+                rcube[next_block] = ta1 * ta2
+
+        # [r], [r^2], [r^3]
+        self.rint = rint
+        self.rsquare = rsquare
+        self.rcube = rcube
+
+    def get_material(self, where):
+        """ returns [r], [r^2], [r^3] as a pre-processed tuple """
+        index = self.index
+        target = index * self.rounds + where
+        rint = self.rint[target]
+        rsquare = self.rsquare[target]
+        rcube = self.rcube[target]
+        return rint, rsquare, rcube
+
+    def gen_next_pre(self):
+        self.index.iadd(1)
+
+    def reset(self):
+        self.index.imul(0)
+
+class MiMC(object):
+    """ Class for MiMC PRF as described in https://eprint.iacr.org/2016/542 """
+
+    def __init__(self, _rounds, _key, num_calls):
+        self.rounds = _rounds
+        # Random constants for each round
+        self.constants = self.get_rounds_constants()
+        self.key = _key
+        if use_cubes:
+            self.kd_pre = KDPreprocessing(num_calls, self.rounds)
+
+    def get_rounds_constants(self):
+        return [sint.get_random_triple()[0].reveal() for i in range(self.rounds)] 
+
+    @vectorize
+    def encrypt(self, m):
+        print("***** Inside Encrypt")
+        key = self.key
+        x = m + key
+
+        # print(f"rounds: {self.rounds}")
+        # print(f"m: {m}")
+        # print(f"key: {key}")
+        # print(f"z: {x}")
+
+        for r in range(self.rounds):
+            if use_cubes:
+                a1, a2, a3 = self.kd_pre.get_material(r)
+                y = (x - a1).reveal()
+                y2 = y**2
+                y3 = y * y2
+                x3 = 3*(y*a2 + y2*a1) + y3 + a3
+                x = x3 + key + self.constants[r]
+            else:
+                x = x ** 3
+                x = x + key + self.constants[r]
+                # print(f"R: {self.constants[r]}")
+                # print(f"x this round: {x}")
+
+        x = x + key
+        if use_cubes:
+            self.kd_pre.gen_next_pre()
+        print(f"X: {x}")
+        return x
+
+    def encrypt_clear_to_ss(self, m):
+        return self.encrypt(m)
+
+    def encrypt_ss_to_ss(self, m):
+        return self.encrypt(m)
+
+    def encrypt_ss_to_clear(self, m):
+        return self.encrypt(m).reveal()
+
+    def reset_kd_pre(self):
+        self.kd_pre.reset()
+
+def create_mimc():
+    rounds = 100
+    key = 12345
+    num_calls = 5
+
+    mimc = MiMC(rounds, key, num_calls)
+
+    return mimc
+
+def main():
+    """Listen in while loop for players to join a game.
+    Once maxiumum reached or have notified that round finished, run comparison and return result."""
+    # Start listening for client socket connections
+    listen_for_clients(PORTNUM)
+    print_ln("*** Inside bakers_bonus")
+    print_ln('Listening for client connections on base port %s', PORTNUM)
+
+    mimc = create_mimc()
+    
+    def game_loop(_=None):
+        print_ln('Starting a new round of the game.')
+
+        # Clients socket id (integer).
+        client_sockets = Array(MAX_NUM_CLIENTS, regint)
+        # Number of clients
+        number_clients = MemValue(regint(0))
+        # Client ids to identity client
+        client_ids = Array(MAX_NUM_CLIENTS, sint)
+        # Keep track of received inputs
+        seen = Array(MAX_NUM_CLIENTS, regint)
+        seen.assign_all(0)
+
+        # Loop round waiting for each client to connect
+        @do_while
+        def client_connections():
+            client_id, last = accept_client()
+            @if_(client_id >= MAX_NUM_CLIENTS)
+            def _():
+                print_ln('client id too high')
+                crash()
+            client_sockets[client_id] = client_id
+            client_ids[client_id] = client_id
+            seen[client_id] = 1
+            @if_(last == 1)
+            def _():
+                number_clients.write(client_id + 1)
+
+            return (sum(seen) < number_clients) + (number_clients == 0)
+
+        def type_run(t):
+            # Clients secret input.
+            client_values = t.Array(MAX_NUM_CLIENTS)
+            print(f"T: {t}")
+            print(f"T: {t == sint}")
+
+            @for_range_multithread(n_threads, 1, number_clients)
+            def _(client_id):
+                client_values[client_id] = client_input(t, client_id)
+
+            winning_client_id = determine_winner(number_clients, client_values,
+                                                 client_ids)
+            print(f'winning client id: {winning_client_id}')
+            print_ln(f'winning client id: {winning_client_id}')
+            print(f'winning client id type: {type(winning_client_id)}')
+
+            print_ln('Found winner, index: %s.', winning_client_id.reveal())
+
+            write_winner_to_clients(client_sockets, number_clients, winning_client_id)
+
+            # h = determine_hash(mimc, number_clients, client_values, client_ids)
+            # write_hash_to_clients(client_sockets, number_clients, h)
+
+        type_run(sint)
+        # type_run(sfix)
+
+        close_connections(number_clients)
+
+        return True
+
+    if n_rounds > 0:
+        print('run %d rounds' % n_rounds)
+        for_range(n_rounds)(game_loop)
+    else:
+        print('run forever')
+        do_while(game_loop)
+
+main()

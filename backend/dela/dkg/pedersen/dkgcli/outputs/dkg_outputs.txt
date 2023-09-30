@@ -1,0 +1,393 @@
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mod.go:93[0m[36m >[0m DELA Logger initialized!
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:193[0m[36m >[0m public URL is: //127.0.0.1:6250
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mod.go:93[0m[36m >[0m DELA Logger initialized!
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:193[0m[36m >[0m public URL is: //127.0.0.1:6251
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mod.go:93[0m[36m >[0m DELA Logger initialized!
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:193[0m[36m >[0m public URL is: //127.0.0.1:6252
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/server.go:606[0m[36m >[0m creating certificate: ips: [127.0.0.1] [36mdnsNames=[0m[] [36mhostname=[0m127.0.0.1
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/server.go:606[0m[36m >[0m creating certificate: ips: [127.0.0.1] [36mdnsNames=[0m[] [36mhostname=[0m127.0.0.1
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/server.go:606[0m[36m >[0m creating certificate: ips: [127.0.0.1] [36mdnsNames=[0m[] [36mhostname=[0m127.0.0.1
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:275[0m[36m >[0m listening on: 127.0.0.1:6250
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:275[0m[36m >[0m listening on: 127.0.0.1:6251
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/mod.go:275[0m[36m >[0m listening on: 127.0.0.1:6252
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/controller/mod.go:196[0m[36m >[0m mino[127.0.0.1:6250] is running
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/controller/mod.go:196[0m[36m >[0m mino[127.0.0.1:6251] is running
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../../../mino/minogrpc/controller/mod.go:196[0m[36m >[0m mino[127.0.0.1:6252] is running
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../controller/controller.go:195[0m[36m >[0m perdersen public key [36mbdn public key=[0m4e20b1fd1cd8be3b3e1f89ca18fd1d9f8a34f513c1afb090bf17af5bebef5c7381cd2c63f58bad576745a077170649b13ba122bad8ba8d9d44b8e259988682be268526eaab13b91c2dec5f9a43e7301003b64bb1533312cea371d0f8218a039f5060cd1d83a395c3d66bb96a897317897cbcaf5dc18cae377e6f4f3f59bd833d [36mpublic key=[0m760a441301b09745767151af123c87c98490a3539927e58602140d125007e8e6
+*** Inside getCollectiveAuth
+Authorities:  [RjEyNy4wLjAuMTo2MjUw:dgpEEwGwl0V2cVGvEjyHyYSQo1OZJ+WGAhQNElAH6OY=:TiCx/RzYvjs+H4nKGP0dn4o09RPBr7CQvxevW+vvXHOBzSxj9YutV2dFoHcXBkmxO6Eiuti6jZ1EuOJZmIaCviaFJuqrE7kcLexfmkPnMBADtkuxUzMSzqNx0PghigOfUGDNHYOjlcPWa7lqiXMXiXy8r13BjK43fm9PP1m9gz0= RjEyNy4wLjAuMTo2MjUx:a1/FYFvUDdt77FtutUwGgfAhQOGkusMlJif6asWcDW4=:Jp37ESPN0tetEcKrUCG7ReI1utG+eTr/LW0zxVevQKQihu0UI62AHIFEPbN7yYcbziGXnlUdJ+cNUm/y73XtIYGOB+QbK+3q/aqXQ/elm6lo6ijMTN2GBLgi69CzP57rVpl7HGKvI/EIbmjB62v10hxls1xgbGpHsWB7De2b1lM= RjEyNy4wLjAuMTo2MjUy:g0wvuYt/DE66+BYYR4XCaGfiA9TsAj1mvTMTRbtS8D4=:U+9WJQg4vC5pUYtnquaM0YXRvoCyj1xTolb3ueflSI8RJOzZft/loIlwfMitQwT9u/LqQ5BxP+6quqjRogtPJHP62H6kqbUI40rdwHeChTKOlh4TXRSstPJawAeY1S7ycjFHC22v+kS9HdHoq96ejgVflr9xVdt0qEaCvYaOEWQ=]
+*** Inside decodeAuthority
+str:  RjEyNy4wLjAuMTo2MjUw:dgpEEwGwl0V2cVGvEjyHyYSQo1OZJ+WGAhQNElAH6OY=:TiCx/RzYvjs+H4nKGP0dn4o09RPBr7CQvxevW+vvXHOBzSxj9YutV2dFoHcXBkmxO6Eiuti6jZ1EuOJZmIaCviaFJuqrE7kcLexfmkPnMBADtkuxUzMSzqNx0PghigOfUGDNHYOjlcPWa7lqiXMXiXy8r13BjK43fm9PP1m9gz0=
+parts:  [RjEyNy4wLjAuMTo2MjUw dgpEEwGwl0V2cVGvEjyHyYSQo1OZJ+WGAhQNElAH6OY= TiCx/RzYvjs+H4nKGP0dn4o09RPBr7CQvxevW+vvXHOBzSxj9YutV2dFoHcXBkmxO6Eiuti6jZ1EuOJZmIaCviaFJuqrE7kcLexfmkPnMBADtkuxUzMSzqNx0PghigOfUGDNHYOjlcPWa7lqiXMXiXy8r13BjK43fm9PP1m9gz0=]
+addr:  127.0.0.1:6250
+bdn pubkey:  760a441301b09745767151af123c87c98490a3539927e58602140d125007e8e6
+*** Inside decodeAuthority
+str:  RjEyNy4wLjAuMTo2MjUx:a1/FYFvUDdt77FtutUwGgfAhQOGkusMlJif6asWcDW4=:Jp37ESPN0tetEcKrUCG7ReI1utG+eTr/LW0zxVevQKQihu0UI62AHIFEPbN7yYcbziGXnlUdJ+cNUm/y73XtIYGOB+QbK+3q/aqXQ/elm6lo6ijMTN2GBLgi69CzP57rVpl7HGKvI/EIbmjB62v10hxls1xgbGpHsWB7De2b1lM=
+parts:  [RjEyNy4wLjAuMTo2MjUx a1/FYFvUDdt77FtutUwGgfAhQOGkusMlJif6asWcDW4= Jp37ESPN0tetEcKrUCG7ReI1utG+eTr/LW0zxVevQKQihu0UI62AHIFEPbN7yYcbziGXnlUdJ+cNUm/y73XtIYGOB+QbK+3q/aqXQ/elm6lo6ijMTN2GBLgi69CzP57rVpl7HGKvI/EIbmjB62v10hxls1xgbGpHsWB7De2b1lM=]
+addr:  127.0.0.1:6251
+bdn pubkey:  6b5fc5605bd40ddb7bec5b6eb54c0681f02140e1a4bac3252627fa6ac59c0d6e
+*** Inside decodeAuthority
+str:  RjEyNy4wLjAuMTo2MjUy:g0wvuYt/DE66+BYYR4XCaGfiA9TsAj1mvTMTRbtS8D4=:U+9WJQg4vC5pUYtnquaM0YXRvoCyj1xTolb3ueflSI8RJOzZft/loIlwfMitQwT9u/LqQ5BxP+6quqjRogtPJHP62H6kqbUI40rdwHeChTKOlh4TXRSstPJawAeY1S7ycjFHC22v+kS9HdHoq96ejgVflr9xVdt0qEaCvYaOEWQ=
+parts:  [RjEyNy4wLjAuMTo2MjUy g0wvuYt/DE66+BYYR4XCaGfiA9TsAj1mvTMTRbtS8D4= U+9WJQg4vC5pUYtnquaM0YXRvoCyj1xTolb3ueflSI8RJOzZft/loIlwfMitQwT9u/LqQ5BxP+6quqjRogtPJHP62H6kqbUI40rdwHeChTKOlh4TXRSstPJawAeY1S7ycjFHC22v+kS9HdHoq96ejgVflr9xVdt0qEaCvYaOEWQ=]
+addr:  127.0.0.1:6252
+bdn pubkey:  834c2fb98b7f0c4ebaf816184785c26867e203d4ec023d66bd331345bb52f03e
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Start
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../controller/controller.go:195[0m[36m >[0m perdersen public key [36mbdn public key=[0m53ef56250838bc2e69518b67aae68cd185d1be80b28f5c53a256f7b9e7e5488f1124ecd97edfe5a089707cc8ad4304fdbbf2ea4390713feeaabaa8d1a20b4f2473fad87ea4a9b508e34addc0778285328e961e135d14acb4f25ac00798d52ef27231470b6daffa44bd1dd1e8abde9e8e055f96bf7155db74a84682bd868e1164 [36mpublic key=[0m834c2fb98b7f0c4ebaf816184785c26867e203d4ec023d66bd331345bb52f03e
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Start
+[90m2023-09-05T10:58:28+02:00[0m [32mINF[0m [1m../controller/controller.go:195[0m[36m >[0m perdersen public key [36mbdn public key=[0m269dfb1123cdd2d7ad11c2ab5021bb45e235bad1be793aff2d6d33c557af40a42286ed1423ad801c81443db37bc9871bce21979e551d27e70d526ff2ef75ed21818e07e41b2bedeafdaa9743f7a59ba968ea28cc4cdd8604b822ebd0b33f9eeb56997b1c62af23f1086e68c1eb6bf5d21c65b35c606c6a47b1607b0ded9bd653 [36mpublic key=[0m6b5fc5605bd40ddb7bec5b6eb54c0681f02140e1a4bac3252627fa6ac59c0d6e
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Start
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:282[0m[36m >[0m new state [36maction=[0mdeal [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:282[0m[36m >[0m new state [36maction=[0mdeal [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:288[0m[36m >[0m new state [36maction=[0mrespond [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:282[0m[36m >[0m new state [36maction=[0mdeal [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:288[0m[36m >[0m new state [36maction=[0mrespond [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:288[0m[36m >[0m new state [36maction=[0mrespond [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Deal
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:294[0m[36m >[0m new state [36maction=[0mcertify [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:294[0m[36m >[0m new state [36maction=[0mcertify [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:306[0m[36m >[0m new state [36maction=[0mfinalize [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:312[0m[36m >[0m new state [36maction=[0mdone [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.Response
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:306[0m[36m >[0m new state [36maction=[0mfinalize [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../pedersen.go:198[0m[36m >[0m node "127.0.0.1:6250" done
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:294[0m[36m >[0m new state [36maction=[0mcertify [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../pedersen.go:198[0m[36m >[0m node "127.0.0.1:6252" done
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:306[0m[36m >[0m new state [36maction=[0mfinalize [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../pedersen.go:198[0m[36m >[0m node "127.0.0.1:6251" done
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:312[0m[36m >[0m new state [36maction=[0mdone [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../dkg.go:312[0m[36m >[0m new state [36maction=[0mdone [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+*** action - Inside issueMasterCredential Action
+ID Hash:  4944964242847190951488256884390560517039982467179704502653470299307294056255
+Actor:  &{0xc00033c680 0xc00013c000 {{<nil>}} 0xc00047e000 []}
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:58:38+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+OUT:  FrfibFUO90fq2PUr9D49607YcECE5duJ9TGS5RJiM8tUHHjri8O2JnbUuT5oIHCX3/b2f2h52XrJt4vaBIN3tA==:RbB/NrtjQRXKrAUF7JmvW7K1ms0qwaCP2YlcI8+WkuF6kn7aKVNI6bfchts5aSz1o0tu53d4kHC2XLCjlmQneQ==:RuBitTN3VCLM3cmTyTSYXsy22B6IslJoms3VN6g/y2qB7CGe/SEqDud5uc2M+2ExtblXYWv19N7ynfF/BySi0g==:UD+RQEo7wv3AIorHXQayeFZvlV0ffD1p39a61rZZzekg5pZz5t+csmAOVTO+qz69gqIV7Q7iY39YQ5opZCfnsA==
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+*** action - Inside issueEventCredential Action
+flags:  map[config:/tmp/node1250 eventName:Event help:false idhash:4944964242847190951488256884390560517039982467179704502653470299307294056255 masterCredential:FrfibFUO90fq2PUr9D49607YcECE5duJ9TGS5RJiM8tUHHjri8O2JnbUuT5oIHCX3/b2f2h52XrJt4vaBIN3tA== masterSignatures:RbB/NrtjQRXKrAUF7JmvW7K1ms0qwaCP2YlcI8+WkuF6kn7aKVNI6bfchts5aSz1o0tu53d4kHC2XLCjlmQneQ==:RuBitTN3VCLM3cmTyTSYXsy22B6IslJoms3VN6g/y2qB7CGe/SEqDud5uc2M+2ExtblXYWv19N7ynfF/BySi0g==:UD+RQEo7wv3AIorHXQayeFZvlV0ffD1p39a61rZZzekg5pZz5t+csmAOVTO+qz69gqIV7Q7iY39YQ5opZCfnsA==]
+Master Credential:  [22 183 226 108 85 14 247 71 234 216 245 43 244 62 61 235 78 216 112 64 132 229 219 137 245 49 146 229 18 98 51 203 84 28 120 235 139 195 182 38 118 212 185 62 104 32 112 151 223 246 246 127 104 121 217 122 201 183 139 218 4 131 119 180]
+Master Signatures:  [[69 176 127 54 187 99 65 21 202 172 5 5 236 153 175 91 178 181 154 205 42 193 160 143 217 137 92 35 207 150 146 225 122 146 126 218 41 83 72 233 183 220 134 219 57 105 44 245 163 75 110 231 119 120 144 112 182 92 176 163 150 100 39 121] [70 224 98 181 51 119 84 34 204 221 201 147 201 52 152 94 204 182 216 30 136 178 82 104 154 205 213 55 168 63 203 106 129 236 33 158 253 33 42 14 231 121 185 205 140 251 97 49 181 185 87 97 107 245 244 222 242 157 241 127 7 36 162 210] [80 63 145 64 74 59 194 253 192 34 138 199 93 6 178 120 86 111 149 93 31 124 61 105 223 214 186 214 182 89 205 233 32 230 150 115 230 223 156 178 96 14 85 51 190 171 62 189 130 162 21 237 14 226 99 127 88 67 154 41 100 39 231 176]]
+Actor:  &{0xc00033c680 0xc00013c000 {{<nil>}} 0xc00047e000 [4944964242847190951488256884390560517039982467179704502653470299307294056255]}
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:05+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+*** action - Inside verifyEventCredential Action
+*** action - Inside issueMasterCredential Action
+ID Hash:  7451819636739122889918599251404610189284974137287017280073779665739370395945
+Actor:  &{0xc00033c680 0xc00013c000 {{<nil>}} 0xc00047e000 [4944964242847190951488256884390560517039982467179704502653470299307294056255]}
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T10:59:30+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+OUT:  jUgWy8fVslpkn6qZjLq2Fq3Ic7d6H8T0uNP98VKv6ktjY1ME+d/wRqkFcgx57a6IyaLSKf/J1uPG7/BFUVy9aQ==:BoabiKrji6AcGvXRy6I5B+hCBCjLHGKz2f4pG9fV2aoDwf5KBK1AqTFXj6KjIGW2EwkzcKr54aUdrPIRdtfjgA==:jT02O7U/MuhJlgyXm+mR9iWx0frJypRHVZ16Qx7gPUojf5hSQo3A5rBjxl3QCvLNS8YrS4tELE5bBM/69A3A6Q==:DRl80pVrwWQH1hM5Iec3q/mDFtRkDy48TOgVwQ6VGOyKsdcDY2ng34nzLgibekHHdTpSfHC6ES0SBr3vPYgKIw==
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+*** action - Inside issueEventCredential Action
+flags:  map[config:/tmp/node1250 eventName:Event help:false idhash:7451819636739122889918599251404610189284974137287017280073779665739370395945 masterCredential:jUgWy8fVslpkn6qZjLq2Fq3Ic7d6H8T0uNP98VKv6ktjY1ME+d/wRqkFcgx57a6IyaLSKf/J1uPG7/BFUVy9aQ== masterSignatures:BoabiKrji6AcGvXRy6I5B+hCBCjLHGKz2f4pG9fV2aoDwf5KBK1AqTFXj6KjIGW2EwkzcKr54aUdrPIRdtfjgA==:jT02O7U/MuhJlgyXm+mR9iWx0frJypRHVZ16Qx7gPUojf5hSQo3A5rBjxl3QCvLNS8YrS4tELE5bBM/69A3A6Q==:DRl80pVrwWQH1hM5Iec3q/mDFtRkDy48TOgVwQ6VGOyKsdcDY2ng34nzLgibekHHdTpSfHC6ES0SBr3vPYgKIw==]
+Master Credential:  [141 72 22 203 199 213 178 90 100 159 170 153 140 186 182 22 173 200 115 183 122 31 196 244 184 211 253 241 82 175 234 75 99 99 83 4 249 223 240 70 169 5 114 12 121 237 174 136 201 162 210 41 255 201 214 227 198 239 240 69 81 92 189 105]
+Master Signatures:  [[6 134 155 136 170 227 139 160 28 26 245 209 203 162 57 7 232 66 4 40 203 28 98 179 217 254 41 27 215 213 217 170 3 193 254 74 4 173 64 169 49 87 143 162 163 32 101 182 19 9 51 112 170 249 225 165 29 172 242 17 118 215 227 128] [141 61 54 59 181 63 50 232 73 150 12 151 155 233 145 246 37 177 209 250 201 202 148 71 85 157 122 67 30 224 61 74 35 127 152 82 66 141 192 230 176 99 198 93 208 10 242 205 75 198 43 75 139 68 44 78 91 4 207 250 244 13 192 233] [13 25 124 210 149 107 193 100 7 214 19 57 33 231 55 171 249 131 22 212 100 15 46 60 76 232 21 193 14 149 24 236 138 177 215 3 99 105 224 223 137 243 46 8 155 122 65 199 117 58 82 124 112 186 17 45 18 6 189 239 61 136 10 35]]
+Actor:  &{0xc00033c680 0xc00013c000 {{<nil>}} 0xc00047e000 [4944964242847190951488256884390560517039982467179704502653470299307294056255 7451819636739122889918599251404610189284974137287017280073779665739370395945]}
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:09+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.SignRequest
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+*** action - Inside verifyEventCredential Action
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:00:22+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [114 101 115 101 108 108 59 69 118 101 110 116 59 48 52 52 100 56 50 98 53 50 53 98]
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [55 99 97 49 99 56 53 52 49 100 55 102 50 53 100 56 99 48 50 51 56 56 51 51]
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [50 48 50 55 55 54 97 52 57 102 56 49 54 97 49 53 100 49 55 49 102 52 50 49]
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [56 52 54 52 53 100 57 98 101 56 51 56 102 52 49 48 54 97 50 100 55 50 50 57]
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [56 50 57 57 53 53 49 102 99 100 50 56 50 49 101 57 99 98 53 97 55 53 50 99]
+[90m2023-09-05T11:01:01+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [55 100 98 101 102 51 50 55 55 53 102 101 51 52 48 55 57 99 54 49 102 57 49 100]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [99 52 99 98 55 48 51 48 100 48 48 99 100 51 97 52 52 48 55 50 53 54 53 52]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [57 56 57 48 102 54 56 51 101 53 54 98 54 52 48 54 98 52 52 50 55 101 100 57]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [101 99 101 102 99 56 98 102 55 99 53 50 49 48 102 59 49 48 59 49 48 48 59 71]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [72 53 52 71 101 49 54 88 80 50 78 49 74 111 80 110 56 74 43 68 109 112 119 108]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [111 112 87 106 57 118 79 77 79 51 50 97 102 65 111 75 56 50 79 52 88 102 122 74]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [119 110 87 90 77 80 120 80 77 109 85 84 86 70 89 105 49 102 78 101 115 116 70 99]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [71 67 86 70 79 107 55 114 72 99 81 52 65 61 61]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [114 101 98 117 121 59 69 118 101 110 116 59 48 52 52 97 101 97 48 97 57 49 56 56]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [56 98 54 100 54 51 99 97 97 55 52 56 100 53 50 55 55 50 52 57 50 57 102 101]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [53 56 97 50 97 49 51 101 54 100 53 50 101 101 54 100 56 100 98 49 99 102 100 54]
+[90m2023-09-05T11:01:02+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [99 99 99 55 100 52 49 48 55 102 49 100 48 48 51 100 56 100 52 51 55 48 102 50]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [53 54 99 57 100 57 102 52 54 101 98 56 50 57 56 100 52 97 97 97 97 49 99 53]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [51 48 98 48 52 48 98 101 98 97 98 54 98 98 57 57 57 49 101 55 102 55 49 48]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [49 99 100 98 56 52 51 56 56 53 48 53 102 48 100 101 100 98 49 98 53 98 51 100]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [51 97 53 97 98 98 100 54 52 56 98 100 57 57 100 98 54 99 57 102 48 48 52 101]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [56 98 49 52 102 101 54 102 102 56 57 56 50 100 59 53 59 49 48 48 46 48 48 48]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [48 48 48 59 85 56 107 85 83 104 66 89 100 50 104 101 107 113 104 97 103 85 90 74]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [118 67 86 109 106 74 121 52 54 66 71 113 103 55 72 54 70 85 111 52 43 76 120 67]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [106 76 103 113 56 43 54 66 99 50 99 103 100 118 67 83 115 117 49 106 80 68 79 57]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6250 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6252 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:73[0m[36m >[0m stream done, EOF [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:54[0m[36m >[0m stream start [36maddr=[0m127.0.0.1:6251 [36mrole=[0m"DKG handler"
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6250 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../pedersen.go:573[0m[36m >[0m Decrypted message: [97 67 90 87 111 116 97 81 97 54 85 80 89 112 65 72 53 103 61 61]
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6252 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest
+[90m2023-09-05T11:01:03+02:00[0m [32mINF[0m [1m../handler.go:82[0m[36m >[0m message received [36maddr=[0m127.0.0.1:6251 [36mfrom=[0mOrchestrator:127.0.0.1:6250 [36mrole=[0m"DKG handler" [36mtype=[0mtypes.DecryptRequest

@@ -1,0 +1,10 @@
+{
+    "server_port": 2100,
+    "num_nodes_dela": 3,
+    "num_nodes_dkg": 3,
+    "num_nodes_mpc": 2,
+    "start_node_dela": 250,
+    "start_port_dela": 2250,
+    "start_node_dkg": 1250,
+    "start_port_dkg": 6250
+}

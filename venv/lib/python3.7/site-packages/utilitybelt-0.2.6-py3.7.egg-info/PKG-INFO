@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: utilitybelt
+Version: 0.2.6
+Summary: Generally useful tools. A python utility belt.
+Home-page: https://github.com/onenameio/utilitybelt
+Author: Halfmoon Labs
+Author-email: hello@halfmoonlabs.com
+License: MIT
+Description: UNKNOWN
+Keywords: dict dictionary scrub to_dict todict json characters charset hex entropy utility
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
