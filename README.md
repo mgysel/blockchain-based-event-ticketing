@@ -1,5 +1,5 @@
 
-# Sealed-Bid Blockchain Auctions using F3B
+# Blockchain-based Event Ticketing
 
   
 
@@ -9,7 +9,7 @@
 
 Event Ticketing is a $78 Billion industry globally, with the secondary ticket market accounting for $19 Billion of this. However, event organizers have no control over the secondary ticket market and attendees experience high rates of ticket fraud. In fact, Ticketmaster estimates that bots siphon off 60% of tickets for major events that are then resold at higher prices. Event organizers have no control over these secondary ticket prices and see none of the resale value. Furthermore, 12% of adults in the United States have purchased fraudulent tickets online, creating a lack of trust in the secondary ticket market. Thus, the inability of event organizers to control the secondary ticket market for their own events and the inability of attendees to trust the secondary ticket market present major challenges in existing event ticketing systems.
 
-This project implements a blockchain-based event ticketing system with the goals of giving event organizers control over the secondary ticket market and preventing ticket fraud. This is achieved through the use of an identification system and ticket market.
+This project implements a blockchain-based event ticketing system with the goals of giving event organizers control over the secondary ticket market and preventing ticket fraud. This is achieved through the use of an identification system and ticket market. A more in-depth discussion of the project can be viewed in `Final_Report.pdf` and `Final_Presentation.pdf`.
 
   
 
