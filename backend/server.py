@@ -127,7 +127,6 @@ def sc_value_read():
     Reads a value from value contract
     Given key
     '''
-    print("Request args: ", request.args)
     response = value_read_server(request.args, START_NODE_DELA)
     return response
 
@@ -168,8 +167,6 @@ def event_get(current_user, event_id):
     '''
     Gets event_id from db
     '''
-    print("*** Inside Get Event")
-    print("event ID: ", event_id)
     response = event_get_event(START_NODE_DELA, event_id)
     return response
 
@@ -180,10 +177,7 @@ def event_create(current_user):
     Creates an event
     Writes event to blockchain
     '''
-    print("*** Inside create event")
     data = request.get_json()
-    print("Data: ", data)
-    print("Current User: ", current_user)
     response = event_create_event(current_user._id, START_NODE_DELA, data)
     return response
 
@@ -214,7 +208,6 @@ def event_rebuy(current_user):
     '''
     Encrypts rebuy tx and writes to blockchain
     '''
-    print("*** Inside sc/event/rebuy")
     data = request.get_json()
     response = event_rebuy_ticket(current_user._id, data, START_NODE_DELA, START_NODE_DKG, NUM_NODES_DKG)
     return response
@@ -245,7 +238,6 @@ def event_use_tickets(current_user):
     '''
     Uses numTickets tickets
     '''
-    print("*** Inside server use_tickets")
     data = request.get_json()
     response = event_use_ticket(current_user._id, data, START_NODE_DELA, NUM_NODES_DKG, START_NODE_DKG)
     return response
