@@ -26,8 +26,6 @@ def create_name_shares(name, num_players):
     Creates secret shares for a given name
     Outputs the shares in files Player-Data/Input-P<i>-0
     '''
-    print("Inside create_name_shares: ")
-    print("Name: ", name)
 
     # Determine sha256 hash of name
     m = hashlib.sha256()
@@ -36,7 +34,6 @@ def create_name_shares(name, num_players):
 
     # Determine secret shares of name
     shares = SecretSharer.split_secret(hash_name, num_players, num_players)
-    print(f'Shares: {shares}')
 
     # Format secret shares of name to integers
     share_ints = []
@@ -62,20 +59,16 @@ def run_mpc_hash(num_players, key, num_rounds):
     Key and num_rounds must be specified for the mimc prf function
     Returns the hash of the name
     '''
-    print("Current directory: ", os.getcwd())
     os.chdir('mpspdz')
-    print("Current directory after change: ", os.getcwd())
 
     # Compile and run prf_mimc_mine.mpc with num_players
     path = os.path.join(os.getcwd(), 'Scripts/compile-run.py')
     command = f'{path} -E mascot prf_mimc_mine {num_players} {num_rounds} {key}'
-    print("Command: ", command)
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
     
     # Wait to finish and receive output
     process.wait()
     process_output = process.stdout.read().decode('utf-8')
-    print(f'Process output: {process_output}')
 
     os.chdir('../')
     

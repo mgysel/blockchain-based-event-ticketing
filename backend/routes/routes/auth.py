@@ -5,14 +5,10 @@ from json import dumps
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 from datetime import datetime, timedelta 
-from functools import wraps
-import subprocess
-import os
 from cryptography.hazmat.primitives.asymmetric import ec
-from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives import serialization
 
 from routes.objects.userObject import User
-from routes.routes.value import value_contract_write
 
 
 ########## MAIN FUNCTIONS ##########
@@ -24,7 +20,6 @@ def auth_register(data, secret_key):
     Errors from invalid email, email taken, password < 6 characters,
     first or last name being ouside of 1 to 50 range
     '''
-    print("*** Inside auth_register")
     fields = ['email', 'password', 'confirm_password']
     for field in fields:
         if not field in data:
@@ -85,7 +80,6 @@ def auth_register(data, secret_key):
 
     # Create user object, add to database
     user = User(None, email, generate_password_hash(password), sk, pk, id_hash, master_credential, master_signatures, event_credential, event_signatures)
-    print("User: ", user)
     User.insert_one(user)
 
     # Log user in once registered
@@ -102,7 +96,6 @@ def auth_login(data, secret_key):
     Use of JWT references:
     https://www.geeksforgeeks.org/using-jwt-for-user-authentication-in-flask/
     '''
-    print("*** Inside auth_login")
     fields = ['email', 'password']
     for field in fields:
         if not field in data:
@@ -127,7 +120,6 @@ def auth_login(data, secret_key):
         
     # Obtain user from database
     user = User.find_user_by_attribute("email", email)
-    print("User: ", user)
    
     if not user: 
         # returns 401 if user does not exist 

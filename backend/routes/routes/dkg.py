@@ -1,17 +1,9 @@
-import sys
-import os
-
-from flask import Flask, request, redirect, url_for, make_response, jsonify
-from json import dumps, loads
-from werkzeug.security import generate_password_hash, check_password_hash
-from bson.objectid import ObjectId
+from flask import make_response
+from json import dumps
 import subprocess
 import time 
 import random
-from pyseltongue import SecretSharer, PlaintextToHexSecretSharer
-import hashlib
 
-from routes.objects.eventObject import Event
 from routes.objects.userObject import User
 from routes.routes.mpc import determine_mpc_hash
 
@@ -24,7 +16,6 @@ def dkg_encrypt_message_server(user_id, start_node, data):
     Encrypts message using DKG
     Returns HTTP response for server
     '''
-    print("*** Inside dkg.py/dkg_encrypt_message")
     fields = ['message']
     for field in fields:
         if not field in data:
@@ -51,7 +42,6 @@ def dkg_encrypt_message(start_node, message):
     '''
     Encrypts message using DKG
     '''
-    print("*** Inside dkg.py/dkg_encrypt_message")
 
     # Split message into 24 characters 
     # 24 characters is the max length of a message
@@ -96,7 +86,6 @@ def dkg_encrypt_response(response):
     Reads response from dkg encrypt command
     Parses response
     '''
-    print("*** Inside dkg_encryt_response")
     response_split = response.split(";")
     if len(response_split) != 3:
         return {
@@ -134,7 +123,6 @@ def dkg_decrypt_message_server(user_id, start_node, data):
     Decrypts encrypted message using DKG
     Gets response for server
     '''
-    print("*** Inside dkg.py/dkg_encrypt_message")
     fields = ['encrypted_message']
     for field in fields:
         if not field in data:
@@ -166,9 +154,7 @@ def dkg_decrypt_message(start_node, encrypted_message):
 
     # Decrypt each component
     decrypted_split_message = []
-    print("Looping through decrypted_split_message")
     for esm in encrypted_split_message:
-        print("esm: ", esm.strip())
         response = decrypt_command(start_node, esm.strip())
         parsed_response = dkg_decrypt_response(response)
         if parsed_response['message'] == "Error.":
@@ -205,7 +191,6 @@ def dkg_decrypt_response(response):
     Reads response from dkg decrypt command
     Parses response
     '''
-    print("*** Inside dkg_decryt_response")
     response_split = response.split(";")
     if len(response_split) != 3:
         return {
@@ -242,7 +227,6 @@ def dkg_issue_master_credential(user_id, start_node, num_nodes_mpc, data):
     '''
     Issues master credential
     '''
-    print("*** Inside dkg.py/issue_master_credential")
     fields = ['id']
     for field in fields:
         if not field in data:
@@ -263,7 +247,6 @@ def dkg_issue_master_credential(user_id, start_node, num_nodes_mpc, data):
     k = random.getrandbits(128)
     num_rounds = 133
     id_hash = determine_mpc_hash(user_name, num_nodes_mpc, k, num_rounds)
-    print("ID Hash: ", id_hash)
     if id_hash == None:
         return make_response(
                 dumps(
@@ -310,7 +293,6 @@ def dkg_issue_master_credential(user_id, start_node, num_nodes_mpc, data):
         }}), 201)
 
 def issue_master_credential_command(start_node, id_hash):
-    print(f'Issuing master credential for {id_hash}')
     command = f'dkgcli --config /tmp/node{start_node} dkg issueMasterCredential --idhash {id_hash}'
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
     process.wait()
@@ -327,7 +309,6 @@ def dkg_auth_event(user_id, num_nodes_dkg, start_node_dkg, data):
     '''
     Issues event credential
     '''
-    print("*** Inside dkg.py/dkg_auth_event")
     # Get event_name from data
     fields = ['event_name']
     for field in fields:
@@ -406,13 +387,10 @@ def issue_event_credential_command(start_node, id_hash, event_name, master_crede
     '''
     Submits issue_event_credential command to identification system
     '''
-    print(f'Issuing event credential for {master_credential}')
     command = f'dkgcli --config /tmp/node{start_node} dkg issueEventCredential --idhash {id_hash} --eventName {event_name} --masterCredential {master_credential} --masterSignatures {master_signatures}'
-    print("Command: ", command)
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
     process.wait()
     eventCredential = process.stdout.read().decode('utf-8')
-    print(f'Issue Event Credential Process output:{eventCredential}')
     time.sleep(1)
 
     return eventCredential
@@ -425,13 +403,10 @@ def verify_event_credential(start_node, id_hash, event_name, event_credential, e
     '''
     Submits verify_event_credential command to identification system, returns rsponse
     '''
-    print(f'Verifying event credential for {event_credential}')
     command = f'dkgcli --config /tmp/node{start_node} dkg verifyEventCredential --idhash {id_hash} --eventName {event_name} --eventCredential {event_credential} --eventSignatures {event_signatures}'
-    print("Command: ", command)
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
     process.wait()
     eventCredential = process.stdout.read().decode('utf-8')
-    print(f'Verify Event Credential Process output: {eventCredential}')
     time.sleep(1)
 
     return eventCredential

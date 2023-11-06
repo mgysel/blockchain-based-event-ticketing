@@ -1,18 +1,9 @@
-import os
-import subprocess
-import random
-from pyseltongue import SecretSharer, PlaintextToHexSecretSharer
-import hashlib
-
-from flask import Flask, request, redirect, url_for, make_response
-from flask_cors import CORS, cross_origin
-# imports for PyJWT authentication
+from flask import Flask, request, make_response
+from flask_cors import CORS
 import jwt
 from json import dumps, load
 from functools import wraps
 import sys
-from werkzeug.security import generate_password_hash
-from pymongo import MongoClient
 from flask.json import jsonify
 from bson.objectid import ObjectId
 import json

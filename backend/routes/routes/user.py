@@ -20,7 +20,6 @@ def user_get_profile(user_id):
         
     # Obtain user from database
     user = User.find_user_by_attribute("_id", user_id)
-    print("User: ", user)
    
     if not user: 
         # returns 401 if user does not exist 

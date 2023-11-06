@@ -1,20 +1,16 @@
-import sys
 import os
 
-from flask import Flask, request, redirect, url_for, make_response, jsonify
+from flask import make_response
 from json import dumps, loads
-from werkzeug.security import generate_password_hash, check_password_hash
 from bson.objectid import ObjectId
 import subprocess
 import time 
 import random 
-import codecs
-import hashlib
 
 from routes.objects.eventObject import Event
 from routes.objects.userObject import User
 from routes.routes.dkg import dkg_auth_event_tx, dkg_encrypt_message, dkg_decrypt_message
-from routes.routes.value import value_write, value_read, value_list, value_delete
+from routes.routes.value import value_write, value_list, value_delete
 
 NUM_REBUY_TX = 0
 
@@ -68,8 +64,6 @@ def event_get_event(start_node, event_id):
     '''
     Retrieves event of event_id
     '''
-    print("*** Inside event.py/event_get_event")
-
     try:
         # Find event by event_id
         oid = ObjectId(event_id)
@@ -101,7 +95,6 @@ def event_create_event(user_id, start_node, data):
     Creates an event on the dela blockchain 
     given name, num_tickets, price, max_resale_price, resale_royalty
     '''
-    print("*** Inside event.py/event_create_event")
     fields = ['name','num_tickets', 'price', 'max_resale_price', 'resale_royalty']
     for field in fields:
         if not field in data:
@@ -184,7 +177,6 @@ def event_contract_init(start_node, initPK, initName, initNumTickets, initPrice,
     Sends tx to blockchain to init event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Inside blockchain/event.py event_contract_init")
     event_contract_init_command(start_node, initPK, initName, initNumTickets, initPrice, initMaxResalePrice, initResaleRoyalty)
     time.sleep(1)
     response = event_init_text()
@@ -194,8 +186,6 @@ def event_contract_init_command(start_node, initPK, initName, initNumTickets, in
     '''
     Sends tx to blockchain to init event smart contract
     '''
-    print("*** Initialize the event contract.")
-
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
         memcoin\
@@ -219,7 +209,6 @@ def event_init_text():
     '''
     Returns init command response from blockchain nodes
     '''
-    print("*** Inside event_init_text")
     readlines = []
     fn = os.getcwd() + '/dela/outputs/dela_outputs.txt'
     with open(fn, 'r') as f:
@@ -275,7 +264,6 @@ def event_buy_ticket(user_id, start_node_dela, num_nodes_dkg, start_node_dkg, da
     Buys a ticket to an event on the dela blockchain 
     given price
     '''
-    print("*** Inside event.py/event_buy_ticket")
     fields = ['price', 'num_tickets', 'event_name']
     for field in fields:
         if not field in data:
@@ -370,7 +358,6 @@ def event_contract_buy_command(start_node, buy_pk, buy_num_tickets, buy_payment,
     '''
     Sends tx to blockchain to buy a ticket
     '''
-    print("*** Inside event_contract_buy_command.")
 
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
@@ -440,7 +427,6 @@ def event_resell_ticket(user_id, data, start_node_dela, start_node_dkg):
     Reselling a ticket to an event on the dela blockchain 
     given event_name, price, and num_tickets
     '''
-    print("*** Inside event_resell_ticket")
     fields = ['event_name', 'price', 'num_tickets']
     for field in fields:
         if not field in data:
@@ -486,14 +472,12 @@ def event_resell_ticket(user_id, data, start_node_dela, start_node_dkg):
 
     # Create resell transaction
     resell_tx = 'resell;' + str(event_name) + ';' + str(pk) + ';' + str(num_tickets) + ';' + str(price) + ";" + str(event_credential)
-    print("Resell tx: ", resell_tx)
 
     # Dkg encrypt resell transaction
     response = dkg_encrypt_message(start_node_dkg, resell_tx)
     if response['message'] == 'Error.':
         return make_response(dumps(response), 400)
     encrypted_resell_tx = response['data']['encrypted_message']
-    print("Encrypted resell tx: ", encrypted_resell_tx)
 
     # Write encrypted resell transaction to Dela
     secondary_tx_id = random.randint(0, 1000000000000)
@@ -519,7 +503,6 @@ def event_rebuy_ticket(user_id, data, start_node_dela, start_node_dkg, num_nodes
     Rebuying a ticket to an event on the dela blockchain 
     given price
     '''
-    print("*** Inside event_rebuy_ticket")
     fields = ['event_name', 'price', 'num_tickets']
     for field in fields:
         if not field in data:
@@ -584,14 +567,11 @@ def event_rebuy_ticket(user_id, data, start_node_dela, start_node_dkg, num_nodes
     if response['message'] == 'Error.':
         return make_response(dumps(response), 400)
     encrypted_rebuy_tx = response['data']['encrypted_message']
-    print("Encrypted rebuy tx: ", encrypted_rebuy_tx)
 
     # Write encrypted rebuy transaction to Dela
     secondary_tx_id = random.randint(0, 1000000000000)
     response = value_write(start_node_dela, f"secondary_tx_{secondary_tx_id}", str(encrypted_rebuy_tx))
-    print("Value Write Response: ", response)
 
-    print("Returning response")
     return make_response(
         dumps(
             {
@@ -612,7 +592,6 @@ def event_decrypt_execute_secondary(user_id, args, start_node_dela, start_node_d
     '''
     Decrypts and executes secondary market transactions
     '''
-    print("*** Inside event_handle_rebuy_ticket")
     event_name = args.get('name', None)
     if event_name is None:
         return make_response(
@@ -626,40 +605,28 @@ def event_decrypt_execute_secondary(user_id, args, start_node_dela, start_node_d
         )
 
     # Get list of secondary transactions
-    print("* Getting list of secondary transactions")
     response = value_list(start_node_dela)
     if response['message'] == "Error.":
         return make_response(dumps(response), 400)
-    print("List of values: ", response)
     list_values = response['data']['pairs']
 
     # Get encrypted secondary txs
     encrypted_secondary_txs_keys = []
     encrypted_secondary_txs = []
     for lv in list_values:
-        print("This lv: ", lv)
-        print("This lv key: ", lv['key'])
         if lv['key'].startswith("secondary_tx_"):
-            print("lv key: ", lv['key'])
-            print("lv value: ", lv['value'])
             encrypted_secondary_txs.append(lv['value'])
             encrypted_secondary_txs_keys.append(lv['key'])
-    print("Encrypted secondary txs: ", encrypted_secondary_txs)
-    print("Encrypted secondary txs keys: ", encrypted_secondary_txs_keys)
 
     # Shuffle encrypted secondary tx
     random.shuffle(encrypted_secondary_txs)
-    print("Shuffled encrypted secondary txs: ", encrypted_secondary_txs)
 
     # Decrypt each secondary tx 
-    print("* Decrypting each secondary tx")
     secondary_txs = []
     for est in encrypted_secondary_txs:
         response = dkg_decrypt_message(start_node_dkg, est)
-        print("DKG Decrypt response: ", response)
         if response['message'] == "Error.":
             return make_response(dumps(response), 400)
-        print("*** This secondary_tx: ", response['data']['decrypted_message'])
         secondary_tx_split = response['data']['decrypted_message'].split(";")
         if len(secondary_tx_split) != 6:
             return make_response(
@@ -685,19 +652,13 @@ def event_decrypt_execute_secondary(user_id, args, start_node_dela, start_node_d
             "price": price,
             "event_credential": event_credential
         })
-    print("Secondary txs: ", secondary_txs)
 
     # Execute each secondary tx 
-    print("* Executing each secondary tx")
-    print("Rebuy txs: ", secondary_txs)
     for st in secondary_txs:
-        print("st: ", st)
         if st['tx_type'] == "rebuy":
             response = event_contract_rebuy(start_node_dela, st['pk'], st['num_tickets'], st['price'], st['event_credential'])
-            print("Response: ", response)
         elif st['tx_type'] == "resell":
             response = event_contract_resell(start_node_dela, st['pk'], st['num_tickets'], st['price'], st['event_credential'])
-            print("Response: ", response)
 
     # Delete secondary txs
     for k in encrypted_secondary_txs_keys:
@@ -715,11 +676,8 @@ def event_contract_rebuy(start_node_dela, rebuy_pk, rebuy_num_tickets, rebuy_pri
     Sends tx to blockchain to buy a ticket from event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Inside event_contract_resell")
     event_contract_rebuy_command(start_node_dela, rebuy_pk, rebuy_num_tickets, rebuy_price, event_credential)
     response = event_rebuy_text()
-    print("Response = event_rebuy_text")
-    print("Response: ", response)
     return response
 
 def event_contract_rebuy_command(start_node_dela, rebuy_pk, rebuy_num_tickets, rebuy_price, event_credential):
@@ -727,7 +685,6 @@ def event_contract_rebuy_command(start_node_dela, rebuy_pk, rebuy_num_tickets, r
     Sends tx to blockchain to rebuy a ticket to event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Rebuy a ticket to the event contract.")
 
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
@@ -752,7 +709,6 @@ def event_rebuy_text():
     '''
     Returns response from blockchain of a rebuy command 
     '''
-    print("*** Inside event_rebuy_text")
     readlines = []
     fn = f'{os.getcwd()}/dela/outputs/dela_outputs.txt'
     with open(fn, 'r') as f:
@@ -764,7 +720,6 @@ def event_rebuy_text():
     if (len(readlines) > 0):
         line = readlines[0].split("//")[1]
         split_line = line.split(";")
-        print("Split line: ", split_line)
 
         # Success
         if split_line[1] == "success" and len(split_line) == 6:
@@ -798,7 +753,6 @@ def event_contract_resell(start_node, pk, num_tickets, price, event_credential):
     Sends tx to blockchain to resell a ticket from event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Inside event_contract_resell")
     event_contract_resell_command(start_node, pk, num_tickets, price)
     time.sleep(1)
     response = event_resell_text()
@@ -809,7 +763,6 @@ def event_contract_resell_command(start_node, pk, num_tickets, price):
     Sends tx to blockchain to resell a ticket to event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Resell a ticket to the event contract.")
 
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
@@ -831,7 +784,6 @@ def event_resell_text():
     '''
     Returns response from blockchain of a resell command 
     '''
-    print("*** Inside event_resell_text")
     readlines = []
     fn = f'{os.getcwd()}/dela/outputs/dela_outputs.txt'
     with open(fn, 'r') as f:
@@ -879,7 +831,6 @@ def event_handle_secondary_transactions(user_id, args, start_node_dela):
     '''
     Handles secondary market transactions once they are decrypted and executed
     '''
-    print("*** Inside event_handle_secondary_transactions")
     event_name = args.get('name', None)
     if event_name is None:
         return make_response(
@@ -908,7 +859,6 @@ def event_contract_handle_resales(start_node_dela, handle_resales_pk):
     Sends tx to blockchain to handle resales
     Returns response from blockchain nodes
     '''
-    print("*** Inside event_contract_resell")
     event_contract_handle_resales_command(start_node_dela, handle_resales_pk)
     response = event_handle_resales_text()
     return response
@@ -918,7 +868,6 @@ def event_contract_handle_resales_command(start_node_dela, handle_resales_pk):
     Sends tx to blockchain to handle resales
     Returns response from blockchain nodes
     '''
-    print("*** Inside event_contract_handle_resales_command.")
 
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
@@ -934,13 +883,11 @@ def event_contract_handle_resales_command(start_node_dela, handle_resales_pk):
     process.wait()
     process_output = process.stdout.read().decode('utf-8')
     print(f'Process output: {process_output}')
-    time.sleep(1)
 
 def event_handle_resales_text():
     '''
     Returns response from blockchain of a handleResales command 
     '''
-    print("*** Inside event_handle_resales_text")
     readlines = []
     fn = f'{os.getcwd()}/dela/outputs/dela_outputs.txt'
     with open(fn, 'r') as f:
@@ -986,7 +933,6 @@ def event_use_ticket(user_id, data, start_node_dela, num_nodes_dkg, start_node_d
     Uses user tickets
     given num_tickets and event_name
     '''
-    print("*** Inside event.py/event_use_ticket")
     fields = ['num_tickets', 'event_name', 'id']
     for field in fields:
         if not field in data:
@@ -1066,8 +1012,6 @@ def event_contract_use_ticket_command(start_node, pk, num_tickets, event_credent
     '''
     Sends tx to blockchain to use tickets
     '''
-    print("*** Inside event_contract_use_ticket_command.")
-
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
         memcoin\
@@ -1091,8 +1035,7 @@ def event_read_all(user_id, start_node):
     '''
     Reads event smart contract data
     '''
-    print("Inside event read event")
-    
+
     # Submit read all to blockchain
     response = event_contract_read_all(start_node)
 
@@ -1122,7 +1065,6 @@ def event_contract_read_all(start_node):
     Sends tx to blockchain to read event smart contract
     Returns response from blockchain nodes
     '''
-    print("*** Inside event_contract_read_all")
     event_contract_read_all_command(start_node)
     time.sleep(1)
     response = event_read_all_text()
@@ -1132,7 +1074,6 @@ def event_contract_read_all_command(start_node):
     '''
     Sends tx to blockchain to read event smart contract
     '''
-    print("*** Inside event_contract_read_all_command.")
 
     pk_path = os.getcwd() + '/dela/private.key'
     command = f'''
@@ -1150,7 +1091,6 @@ def event_read_all_text():
     '''
     Returns response from blockchain of a readevent command 
     '''
-    print("*** Inside event_read_all_text")
     readlines = []
     fn = f'{os.getcwd()}/dela/outputs/dela_outputs.txt'
     with open(fn, 'r') as f:
