@@ -15,9 +15,7 @@ def build_cli_memcoin():
     '''
     Builds memcoin cli
     '''
-    print("CWD 1: ", os.getcwd())
     os.chdir("cli/node/memcoin")
-    print("CWD 2: ", os.getcwd())
     print("Sharing certificates between nodes 1 and 2")
     command = f'go install'
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
@@ -26,7 +24,6 @@ def build_cli_memcoin():
     print(f'Process output: {process_output}')
     time.sleep(2)
     os.chdir("../../..")
-    print("CWD 3: ", os.getcwd())
 
 # def build_cli_dkg():
 
@@ -203,10 +200,6 @@ def value_contract_write(start_node, key, value):
     print(f'Process output: {process_output}')
     time.sleep(1)
     return process_output
-
-########################################################################################################################
-#################################################### TESTING ###########################################################
-########################################################################################################################
 
 if __name__ == "__main__":
     try:
