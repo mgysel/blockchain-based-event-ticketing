@@ -77,15 +77,12 @@ class User:
         '''
         Inserts a user object into the database
         '''
-        print("*** Inside insert_one")
         json_obj = user.to_json()
-        print("Json obj: ", json_obj)
         if json_obj != None:
             db = MongoWrapper().client['ticketing_store']
             coll = db['users']
             try:
                 inserted = coll.insert_one(json_obj)
-                print("Inserted: ", inserted)
                 return inserted.inserted_id
             except:
                 return None
@@ -158,7 +155,6 @@ class User:
         Queries for user by query_attribute = query_user_attribute
         Updates attribute of user to user_attribute
         '''
-        print("*** Inside update_user_attributes")
         query = { query_attribute: query_user_attribute }
         values = { "$set": values }
         db = MongoWrapper().client['ticketing_store']
